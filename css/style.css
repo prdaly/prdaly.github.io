@@ -1446,3 +1446,21 @@ body.offcanvas {
 .colorlib-about .about-desc strong {
   font-weight: bold; /* Ensure strong tags have a bold font weight */
 }
+
+.project-background-title {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+  transition: opacity 0.3s;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.project:hover .project-background-title {
+  opacity: 0;
+}
